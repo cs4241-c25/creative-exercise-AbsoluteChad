@@ -39,3 +39,6 @@ Sample Readme (delete the above when you're ready to submit, and modify the belo
 - list which topic/site you chose to do (Canvas, SVG, D3, Web Audio API, Three.js)
 - include a link to the example(s) that you based your code. If your code is completely original and not based on an example, mention that.
 - if your code is based on an example, state what changes you made. Otherwise describe what your program does.
+
+https://github.com/nytimes/covid-19-data
+https://raw.githubusercontent.com/nytimes/covid-19-data/refs/heads/master/us-states.csv

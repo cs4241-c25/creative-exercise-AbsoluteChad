@@ -1,0 +1,16 @@
+{
+  "name": "cs4241-c25-a3-short-stack",
+  "version": "0.1.0",
+  "description": "WPI CS4241-C25 Assignment A3",
+  "author": "Vivek Voleti",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mime": "^2.6.0"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
