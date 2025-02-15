@@ -3,11 +3,9 @@ const express = require("express")
 const fs   = require( "node:fs" );
 const mime = require( "mime" );
 
-// constants
-const dir  = "public/";
-const port = 3000;
-
 // init express server
+const dir = "public/"
+const port = 3000;
 const server = express()
 server.use(express.json())
 
@@ -18,6 +16,10 @@ server.get("/", (request, response) => {
 
 server.get("/index.html", (request, response) => {
     sendFile(response, dir + "index.html")
+});
+
+server.get("/data", (request, response) => {
+    sendFile(response, "data/us-states.json")
 });
 
 server.get("*", (request, response) => {

@@ -1,38 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
-body {
-    font-family: "Comic Neue", sans-serif;
+h3 {
+    font-family: sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    color: #333333;
+    text-align: center;
+    animation: bounce 1s infinite;
 }
 
-.practice-checkbox {
-    appearance: none;
-    position: relative;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    margin-top: 4px;
-    margin-right: 5px;
-    border-radius: 4px;
-    background-color: rgba(16, 16, 16, 0.5);
-    box-shadow: rgb(135, 206, 235) 0px 0px 0px 2px;
-    transition: all 0.2s ease;
-}
-
-.practice-checkbox:checked {
-    background-color: rgba(135, 206, 235, 0.7);
-    box-shadow: rgb(135, 206, 235) 0px 0px 0px 2px;
-}
-
-/* construct checkmark by creating L and rotating */
-.practice-checkbox:checked::after {
-    content: "";
-    position: absolute;
-    left: 0.52em;
-    top: 0.38em;
-    width: 0.25em;
-    height: 0.5em;
-    border: solid white;
-    border-width: 0 0.15em 0.15em 0;
-    transform: rotate(45deg);
-    transition: all 200ms ease-in-out;
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
